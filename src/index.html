@@ -6,9 +6,9 @@
 		<link href="./output.css" rel="stylesheet" />
 		<title>Document</title>
 	</head>
-	<body class="bg-gray-bg font-display">
+	<body class="bg-gray-bg font-display pb-1000">
 		<header
-			class="flex justify-between p-6 bg bg-primary text-gray-200 font-medium items-center h-20 text-xl"
+			class="fixed w-full top-0 flex justify-between p-6 bg bg-primary text-gray-200 font-medium items-center h-20 text-xl"
 		>
 			<h1 class="font-bold ml-8">Ashley's Portfolio</h1>
 			<nav class="flex gap-8 mr-8">
@@ -31,7 +31,33 @@
 				my skills in cloud infrastructure and API design.
 			</p>
 		</section>
-		<section class="projects"></section>
+		<!-- change this section to use typescript and generate the tiles automatically -->
+		<!--make this better responsive-->
+		<section class="projects flex flex-col mt-10 items-center text-white">
+			<h1 class="text-4xl font-bold">Projects</h1>
+			<div class="project-card-container mt-10 grid grid-cols-2 gap-4">
+				<div
+					class="w-80 h-80 p-4 bg-secondary rounded-l flex flex-col items-center"
+				>
+					<div class="w-full h-40 rounded-l bg-orange-500"></div>
+					<h2>Project 1</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore
+						dolore a accusamus quaerat voluptatem.
+					</p>
+				</div>
+				<div
+					class="w-80 h-80 p-4 bg-secondary rounded-l flex flex-col items-center"
+				>
+					<div class="w-full h-40 rounded-l bg-orange-500"></div>
+					<h2>Project 1</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore
+						dolore a accusamus quaerat voluptatem.
+					</p>
+				</div>
+			</div>
+		</section>
 		<section class="education"></section>
 		<section class="contact-me"></section>
 		<footer></footer>
