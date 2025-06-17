@@ -6,15 +6,35 @@
 		<link href="./output.css" rel="stylesheet" />
 		<title>Document</title>
 	</head>
-	<body class="bg-gray-bg">
-		<header class="flex justify-between p-4">
-			<h1>Ashley's Portfolio</h1>
-			<nav class="flex gap-2">
+	<body class="bg-gray-bg font-display">
+		<header
+			class="flex justify-between p-6 bg bg-primary text-gray-200 font-medium items-center h-20 text-xl"
+		>
+			<h1 class="font-bold ml-8">Ashley's Portfolio</h1>
+			<nav class="flex gap-8 mr-8">
 				<p>About Me</p>
 				<p>Projects</p>
 				<p>Contact Me</p>
 			</nav>
 		</header>
+
+		<section class="about-me flex flex-col items-center mt-16 text-white">
+			<img src="../assets/profile-pic2.png" class="h-80 rounded-full" />
+			<h1 class="font-bold text-4xl mt-6 text-center">
+				ASPIRING <span class="text-orange-600">FULL-STACK</span> DEVELOPER
+			</h1>
+			<p class="flex mt-6 max-w-240 text-wrap text-lg text-center">
+				I am a motivated full-stack developer with a strong foundation in modern
+				web technologies and cloud-based systems. With hands-on experience
+				building scalable applications using React, Django, and PostgreSQL, I
+				focus on creating clean, efficient solutions and continuously expanding
+				my skills in cloud infrastructure and API design.
+			</p>
+		</section>
+		<section class="projects"></section>
+		<section class="education"></section>
+		<section class="contact-me"></section>
+		<footer></footer>
 		<script src="scripts/script.js"></script>
 	</body>
 </html>
