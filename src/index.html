@@ -5,17 +5,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link href="./output.css" rel="stylesheet" />
 		<title>Document</title>
+		<script src="https://kit.fontawesome.com/be04614a3f.js" crossorigin="anonymous"></script>
 	</head>
 	<main>
 	<body class="bg-gray-bg font-display  flex flex-col justify-between">
 		<header
-			class="fixed w-full top-0 flex justify-between p-6 bg bg-primary text-gray-200 font-medium items-center h-20 text-xl"
+			class="fixed w-full top-0 flex justify-between p-6 bg bg-primary text-gray-200 font-medium items-center h-20 text-xl "
 		>
-			<h1 class="font-bold ml-8">Ashley's Portfolio</h1>
-			<nav class="flex gap-8 mr-8">
-				<p>About Me</p>
-				<p>Projects</p>
-				<p>Contact Me</p>
+			<h1 class="font-bold ml-8 transition-all duration-150 hover:text-orange-600 active:text-orange-700">Ashley's Portfolio</h1>
+			<nav class="flex gap-8 mr-8 ">
+				<p class="transition-all duration-150 hover:text-orange-600 active:text-orange-700">About Me</p>
+				<p class="transition-all duration-150 hover:text-orange-600 active:text-orange-700">Projects</p>
+				<p class="transition-all duration-150 hover:text-orange-600 active:text-orange-700">Contact Me</p>
 			</nav>
 		</header>
 
@@ -31,6 +32,16 @@
 				focus on creating clean, efficient solutions and continuously expanding
 				my skills in cloud infrastructure and API design.
 			</p>
+			<div class="mt-10 flex gap-8 justify-center">
+				<button class="w-16 h-16 text-2xl transition-all duration-150 transform bg-orange-600 outline-secondary rounded-full p-4 text-secondary font-semibold hover:scale-110 hover:text-3xl hover:outline-4 hover:outline-orange-600 hover:text-orange-600 hover:bg-secondary">
+  					<i class="fa-brands fa-github"></i>
+				</button>
+
+				<button class="h-16 transition-all duration-150	transform outline-4 bg-secondary outline-orange-600 rounded-4xl p-4 text-orange-600 font-semibold hover:outline-4 hover:outline-secondary hover:scale-110 hover:text-secondary hover:bg-orange-600">Download CV</button>
+				<button class="w-16 h-16 text-2xl transition-all duration-150 transform bg-orange-600 outline-secondary rounded-full p-4 text-secondary font-semibold hover:scale-110 hover:text-3xl hover:outline-4 hover:outline-orange-600 hover:text-orange-600 hover:bg-secondary">
+  					<i class="fa-brands fa-linkedin"></i>
+				</button>
+			</div>
 		</section>
 
 		<!-- change this section to use typescript and generate the tiles automatically -->
@@ -134,34 +145,36 @@
 		>
 			<h1 class="font-bold text-4xl">CONTACT ME</h1>
 			<div
-				class="flex flex-col gap-8 w-200 h-120 outline-3 outline-gray-500 bg-secondary rounded-2xl p-4"
+				class="flex flex-col gap-8 w-200 h-200 outline-3 outline-gray-500 bg-secondary rounded-2xl p-4"
 			>
 				<div class="flex justify-between p-8 h-20">
 					<div>
 						<h2 class="text-lg text-orange-600">Email:</h2>
 						<p>Ashley03Wilson@Gmail.com</p>
 					</div>
+					
+					
 					<div>
 						<h2 class="text-lg text-orange-600">Phone:</h2>
 						<p>(+44) 07518 745842</p>
 					</div>
 				</div>
 
-				<form class="flex gap-4 flex-col items-center">
-					<div>
+				<form class="flex items-center gap-4 flex-col ">
+					<div class="">
 						<p>Your Email:</p>
-						<input class="p-2 bg-white w-100" type="text" />
+						<input class="p-2 text-black bg-white w-160 focus:outline-orange-600 focus:outline-2" type="text" />
 					</div>
 					<div>
 						<p>Subject:</p>
-						<input class="p-2 bg-white w-100" type="text" />
+						<input class="p-2 text-black bg-white w-160 focus:outline-orange-600 focus:outline-2" type="text" />
 					</div>
 					<div>
 						<p>Email Body:</p>
-						<textarea class="p-2 bg-white w-100" type="textarea"></textarea>
+						<textarea class="p-2 text-black bg-white w-160 h-100 focus:outline-orange-600 focus:outline-2" type="textarea"></textarea>
 					</div>
 					<button
-						class="p-4 flex items-center justify-center font-bold text-lg bg-orange-600 w-40 h-10 rounded-3xl"
+						class="p-4 flex items-center justify-center font-bold text-lg bg-orange-600 w-40 h-10 rounded-3xl hover:bg-orange-700"
 						type="submit"
 					>
 						SEND
@@ -170,7 +183,9 @@
 			</div>
 		</section>
 		</main>
-		<footer class="h-20 w-full bg-primary relative bottom-0"></footer>
+		<footer class="h-20 w-full bg-primary relative bottom-0 text-neutral-500 font-medium text-lg flex justify-center items-center">
+			<p>Ashley Wilson © 2025</p>
+		</footer>
 		<script src="scripts/script.js"></script>
 	</body>
 </html>
