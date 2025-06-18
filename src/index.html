@@ -6,7 +6,8 @@
 		<link href="./output.css" rel="stylesheet" />
 		<title>Document</title>
 	</head>
-	<body class="bg-gray-bg font-display pb-1000">
+	<main>
+	<body class="bg-gray-bg font-display  flex flex-col justify-between">
 		<header
 			class="fixed w-full top-0 flex justify-between p-6 bg bg-primary text-gray-200 font-medium items-center h-20 text-xl"
 		>
@@ -18,9 +19,9 @@
 			</nav>
 		</header>
 
-		<section class="about-me flex flex-col items-center mt-16 text-white">
+		<section class="about-me flex flex-col mt-48 items-center text-white">
 			<img src="../assets/profile-pic2.png" class="h-80 rounded-full" />
-			<h1 class="font-bold text-4xl mt-6 text-center">
+			<h1 class="font-bold text-4xl mt-12 text-center">
 				ASPIRING <span class="text-orange-600">FULL-STACK</span> DEVELOPER
 			</h1>
 			<p class="flex mt-6 max-w-240 text-wrap text-lg text-center">
@@ -31,15 +32,16 @@
 				my skills in cloud infrastructure and API design.
 			</p>
 		</section>
+
 		<!-- change this section to use typescript and generate the tiles automatically -->
 		<!--make this better responsive-->
-		<section class="projects flex flex-col mt-10 items-center text-white">
-			<h1 class="text-4xl font-bold">Projects</h1>
-			<div class="project-card-container mt-10 grid grid-cols-2 gap-4">
+		<section class="projects flex flex-col mt-32 items-center text-white">
+			<h1 class="text-4xl font-bold">PROJECTS</h1>
+			<div class="project-card-container mt-10 grid grid-cols-2 gap-8">
 				<div
 					class="w-80 h-80 p-4 bg-secondary rounded-l flex flex-col items-center"
 				>
-					<div class="w-full h-40 rounded-l bg-orange-500"></div>
+					<div class="w-full h-40 rounded-l bg-orange-600"></div>
 					<h2>Project 1</h2>
 					<p>
 						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore
@@ -49,7 +51,7 @@
 				<div
 					class="w-80 h-80 p-4 bg-secondary rounded-l flex flex-col items-center"
 				>
-					<div class="w-full h-40 rounded-l bg-orange-500"></div>
+					<div class="w-full h-40 rounded-l bg-orange-600"></div>
 					<h2>Project 1</h2>
 					<p>
 						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore
@@ -58,9 +60,117 @@
 				</div>
 			</div>
 		</section>
-		<section class="education"></section>
-		<section class="contact-me"></section>
-		<footer></footer>
+		<section class="education flex flex-col items-center">
+			<h1 class="font-bold text-4xl mt-32 text-center text-white">EDUCATION</h1>
+			<div
+				class="text-white p-4 mt-10 flex flex-col gap-4 items-center text-center"
+			>
+				<h2 class="text-2xl font-semibold">
+					LEEDS BECKETT UNIVERSITY -
+					<span class="text-orange-600">COMPUTER SCIENCE BSc</span> - 2:1
+				</h2>
+				<div
+					class="flex flex-col max-w-240 gap-2 text-center bg-secondary rounded-2xl p-4"
+				>
+					<h2 class="text-lg font-medium">
+						Final Year Project -
+						<span class="text-orange-600">Room Booking System</span>
+					</h2>
+					<p>
+						Developed a full-stack web app using React, Django REST Framework,
+						and PostgreSQL. The system includes room availability checking,
+						JWT-based authentication, real-time chat (WebSockets), and email
+						notifications using Celery and Redis.
+					</p>
+				</div>
+				<div
+					class="flex flex-col max-w-240 gap-2 text-center bg-secondary rounded-2xl p-4"
+				>
+					<h2 class="text-lg font-medium">Notable Modules</h2>
+					<p>
+						Mobile Application Development
+						<span class="text-orange-600 font-bold">/</span> Databases
+						<span class="text-orange-600 font-bold">/</span> Cloud Computing
+						<span class="text-orange-600 font-bold">/</span> Advanced Software
+						Engineering <span class="text-orange-600 font-bold">/</span> Object
+						Oriented Programming
+						<span class="text-orange-600 font-bold">/</span> Networking
+						<span class="text-orange-600 font-bold">/</span> Computer Systems
+						<span class="text-orange-600 font-bold">/</span> Applied Machine
+						Learning <span class="text-orange-600 font-bold">/</span> Operating
+						Systems <span class="text-orange-600 font-bold">/</span> Software
+						System Development
+						<span class="text-orange-600 font-bold">/</span> Computer
+						Communications
+					</p>
+				</div>
+			</div>
+			<div class="text-white p-4 mt-10 flex flex-col gap-2 items-center">
+				<h2 class="text-2xl font-semibold">
+					MEADOWHEAD SCHOOL -
+					<span class="text-orange-600">A LEVELS</span>
+				</h2>
+				<div class="flex gap-8 bg-secondary rounded-2xl p-4">
+					<div>
+						<p>COMPUTER SCIENCE</p>
+						<p>MATHS</p>
+						<p>PYHSICS</p>
+					</div>
+					<div>
+						<p>-</p>
+						<p>-</p>
+						<p>-</p>
+					</div>
+					<div class="text-orange-600">
+						<p>A*</p>
+						<p>A*</p>
+						<p>A*</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			class="contact-me flex flex-col items-center gap-10 mt-32 mb-32 text-center text-white"
+		>
+			<h1 class="font-bold text-4xl">CONTACT ME</h1>
+			<div
+				class="flex flex-col gap-8 w-200 h-120 outline-3 outline-gray-500 bg-secondary rounded-2xl p-4"
+			>
+				<div class="flex justify-between p-8 h-20">
+					<div>
+						<h2 class="text-lg text-orange-600">Email:</h2>
+						<p>Ashley03Wilson@Gmail.com</p>
+					</div>
+					<div>
+						<h2 class="text-lg text-orange-600">Phone:</h2>
+						<p>(+44) 07518 745842</p>
+					</div>
+				</div>
+
+				<form class="flex gap-4 flex-col items-center">
+					<div>
+						<p>Your Email:</p>
+						<input class="p-2 bg-white w-100" type="text" />
+					</div>
+					<div>
+						<p>Subject:</p>
+						<input class="p-2 bg-white w-100" type="text" />
+					</div>
+					<div>
+						<p>Email Body:</p>
+						<textarea class="p-2 bg-white w-100" type="textarea"></textarea>
+					</div>
+					<button
+						class="p-4 flex items-center justify-center font-bold text-lg bg-orange-600 w-40 h-10 rounded-3xl"
+						type="submit"
+					>
+						SEND
+					</button>
+				</form>
+			</div>
+		</section>
+		</main>
+		<footer class="h-20 w-full bg-primary relative bottom-0"></footer>
 		<script src="scripts/script.js"></script>
 	</body>
 </html>
