@@ -10,17 +10,18 @@
 	<main>
 	<body class="bg-gray-bg font-display  flex flex-col justify-between">
 		<header
-			class="fixed w-full top-0 flex justify-between p-6 bg bg-primary text-gray-200 font-medium items-center h-20 text-xl "
+			class="z-100 fixed w-full top-0 flex justify-between p-6 bg bg-primary text-gray-200 font-medium items-center h-20 text-xl "
 		>
-			<h1 class="font-bold ml-8 transition-all duration-150 hover:text-orange-600 active:text-orange-700">Ashley's Portfolio</h1>
+			<h1 class="font-bold ml-8">Ashley's Portfolio</h1>
 			<nav class="flex gap-8 mr-8 ">
-				<p class="transition-all duration-150 hover:text-orange-600 active:text-orange-700">About Me</p>
-				<p class="transition-all duration-150 hover:text-orange-600 active:text-orange-700">Projects</p>
-				<p class="transition-all duration-150 hover:text-orange-600 active:text-orange-700">Contact Me</p>
+				<a href="#about-me" class="transition-all duration-150 hover:text-orange-600 active:text-orange-700">About Me</a>
+				<a href="#projects" class="transition-all duration-150 hover:text-orange-600 active:text-orange-700">Projects</a>
+				<a href="#education" class="transition-all duration-150 hover:text-orange-600 active:text-orange-700">Education</a>
+				<a href="#contact-me" class="transition-all duration-150 hover:text-orange-600 active:text-orange-700">Contact Me</a>
 			</nav>
 		</header>
 
-		<section class="about-me flex flex-col mt-48 items-center text-white">
+		<section id="about-me" class="scroll-mt-22 flex flex-col mt-48 items-center text-white">
 			<img src="../assets/profile-pic2.png" class="h-80 rounded-full" />
 			<h1 class="font-bold text-4xl mt-12 text-center">
 				ASPIRING <span class="text-orange-600">FULL-STACK</span> DEVELOPER
@@ -33,46 +34,173 @@
 				my skills in cloud infrastructure and API design.
 			</p>
 			<div class="mt-10 flex gap-8 justify-center">
-				<button class="w-16 h-16 text-2xl transition-all duration-150 transform bg-orange-600 outline-secondary rounded-full p-4 text-secondary font-semibold hover:scale-110 hover:text-3xl hover:outline-4 hover:outline-orange-600 hover:text-orange-600 hover:bg-secondary">
+				<a href="https://github.com/Ashley-Wilson1" target="_blank" class="text-center w-16 h-16 text-2xl transition-all duration-150 transform bg-orange-600 outline-secondary rounded-full p-4 text-secondary font-semibold hover:scale-110 hover:text-3xl hover:outline-4 hover:outline-orange-600 hover:text-orange-600 hover:bg-secondary">
   					<i class="fa-brands fa-github"></i>
-				</button>
+				</a>
 
 				<button class="h-16 transition-all duration-150	transform outline-4 bg-secondary outline-orange-600 rounded-4xl p-4 text-orange-600 font-semibold hover:outline-4 hover:outline-secondary hover:scale-110 hover:text-secondary hover:bg-orange-600">Download CV</button>
-				<button class="w-16 h-16 text-2xl transition-all duration-150 transform bg-orange-600 outline-secondary rounded-full p-4 text-secondary font-semibold hover:scale-110 hover:text-3xl hover:outline-4 hover:outline-orange-600 hover:text-orange-600 hover:bg-secondary">
+				<a href="https://linkedin.com/in/ashley-wilson-80253b330" target="_blank" class="text-center w-16 h-16 text-2xl transition-all duration-150 transform bg-orange-600 outline-secondary rounded-full p-4 text-secondary font-semibold hover:scale-110 hover:text-3xl hover:outline-4 hover:outline-orange-600 hover:text-orange-600 hover:bg-secondary">
   					<i class="fa-brands fa-linkedin"></i>
-				</button>
+				</a>
+				
 			</div>
 		</section>
 
 		<!-- change this section to use typescript and generate the tiles automatically -->
 		<!--make this better responsive-->
-		<section class="projects flex flex-col mt-32 items-center text-white">
+		<section id="projects" class="scroll-mt-22 flex flex-col mt-32 items-center text-white">
 			<h1 class="text-4xl font-bold">PROJECTS</h1>
-			<div class="project-card-container mt-10 grid grid-cols-2 gap-8">
-				<div
-					class="w-80 h-80 p-4 bg-secondary rounded-l flex flex-col items-center"
-				>
-					<div class="w-full h-40 rounded-l bg-orange-600"></div>
-					<h2>Project 1</h2>
-					<p>
-						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore
-						dolore a accusamus quaerat voluptatem.
-					</p>
+			<div class="project-card-container mt-10 flex flex-wrap justify-center gap-6">
+				<a href="https://github.com/Ashley-Wilson1/QuickBook" target="_blank" class="w-full sm:w-[20rem] md:w-[30rem] max-w-[45rem] rounded-lg transform transition-all duration-150 hover:scale-110 hover:outline-2 hover:outline-orange-600">
+					
+					<img src="../assets/booking-form.png" class="h-auto rounded-t-lg" alt="room booking system">
+					
+					<div
+					class=" p-2 bg-secondary rounded-b-lg flex flex-col gap-2"
+					>
+					
+						<h2 class="font-medium text-lg">Room booking system</h2>
+						<div class="flex gap-1">
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/html.png" alt="HTML" title="HTML"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/css.png" alt="CSS" title="CSS"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/react.png" alt="React" title="React"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/django.png" alt="Django" title="Django"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/postgresql.png" alt="PostgreSQL" title="PostgreSQL"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/redis.png" alt="redis" title="redis"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/docker.png" alt="Docker" title="Docker"/>
+						</div>
+						<p class="text-neutral-400">
+							A full-stack room booking system with chat, email notifications, and real-time updates, built using React, Django, and PostgreSQL.
+						</p>
+						
+					</div>
+				</a>
+				
+				<div class="w-full sm:w-[20rem] md:w-[30rem] max-w-[45rem] rounded-lg transform transition-all duration-150 hover:scale-110 hover:outline-2 hover:outline-orange-600">
+					
+					<img src="../assets/booking-form.png" class="h-auto rounded-t-lg" alt="room booking system">
+					
+					<div
+					class=" p-2 bg-secondary rounded-b-lg flex flex-col gap-2"
+					>
+					
+						<h2 class="font-medium text-lg">Room booking system</h2>
+						<div class="flex gap-1">
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/html.png" alt="HTML" title="HTML"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/css.png" alt="CSS" title="CSS"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/react.png" alt="React" title="React"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/django.png" alt="Django" title="Django"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/postgresql.png" alt="PostgreSQL" title="PostgreSQL"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/redis.png" alt="redis" title="redis"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/docker.png" alt="Docker" title="Docker"/>
+						</div>
+						<p class="text-neutral-400">
+							A full-stack room booking system with chat, email notifications, and real-time updates, built using React, Django, and PostgreSQL.
+						</p>
+						
+					</div>
 				</div>
-				<div
-					class="w-80 h-80 p-4 bg-secondary rounded-l flex flex-col items-center"
-				>
-					<div class="w-full h-40 rounded-l bg-orange-600"></div>
-					<h2>Project 1</h2>
-					<p>
-						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore
-						dolore a accusamus quaerat voluptatem.
-					</p>
+				<div class="w-full sm:w-[20rem] md:w-[30rem] max-w-[45rem] rounded-lg transform transition-all duration-150 hover:scale-110 hover:outline-2 hover:outline-orange-600">
+					
+					<img src="../assets/booking-form.png" class="h-auto rounded-t-lg" alt="room booking system">
+					
+					<div
+					class=" p-2 bg-secondary rounded-b-lg flex flex-col gap-2"
+					>
+					
+						<h2 class="font-medium text-lg">Room booking system</h2>
+						<div class="flex gap-1">
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/html.png" alt="HTML" title="HTML"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/css.png" alt="CSS" title="CSS"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/react.png" alt="React" title="React"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/django.png" alt="Django" title="Django"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/postgresql.png" alt="PostgreSQL" title="PostgreSQL"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/redis.png" alt="redis" title="redis"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/docker.png" alt="Docker" title="Docker"/>
+						</div>
+						<p class="text-neutral-400">
+							A full-stack room booking system with chat, email notifications, and real-time updates, built using React, Django, and PostgreSQL.
+						</p>
+						
+					</div>
+				</div>
+				<div class="w-full sm:w-[20rem] md:w-[30rem] max-w-[45rem] rounded-lg transform transition-all duration-150 hover:scale-110 hover:outline-2 hover:outline-orange-600">
+					
+					<img src="../assets/booking-form.png" class="h-auto rounded-t-lg" alt="room booking system">
+					
+					<div
+					class=" p-2 bg-secondary rounded-b-lg flex flex-col gap-2"
+					>
+					
+						<h2 class="font-medium text-lg">Room booking system</h2>
+						<div class="flex gap-1">
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/html.png" alt="HTML" title="HTML"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/css.png" alt="CSS" title="CSS"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/react.png" alt="React" title="React"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/django.png" alt="Django" title="Django"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/postgresql.png" alt="PostgreSQL" title="PostgreSQL"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/redis.png" alt="redis" title="redis"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/docker.png" alt="Docker" title="Docker"/>
+						</div>
+						<p class="text-neutral-400">
+							A full-stack room booking system with chat, email notifications, and real-time updates, built using React, Django, and PostgreSQL.
+						</p>
+						
+					</div>
+				</div>
+				
+				<div class="w-full sm:w-[20rem] md:w-[30rem] max-w-[45rem] rounded-lg transform transition-all duration-150 hover:scale-110 hover:outline-2 hover:outline-orange-600">
+					
+					<img src="../assets/booking-form.png" class="h-auto rounded-t-lg" alt="room booking system">
+					
+					<div
+					class=" p-2 bg-secondary rounded-b-lg flex flex-col gap-2"
+					>
+					
+						<h2 class="font-medium text-lg">Room booking system</h2>
+						<div class="flex gap-1">
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/html.png" alt="HTML" title="HTML"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/css.png" alt="CSS" title="CSS"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/react.png" alt="React" title="React"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/django.png" alt="Django" title="Django"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/postgresql.png" alt="PostgreSQL" title="PostgreSQL"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/redis.png" alt="redis" title="redis"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/docker.png" alt="Docker" title="Docker"/>
+						</div>
+						<p class="text-neutral-400">
+							A full-stack room booking system with chat, email notifications, and real-time updates, built using React, Django, and PostgreSQL.
+						</p>
+						
+					</div>
+				</div>
+				<div class="w-full sm:w-[20rem] md:w-[30rem] max-w-[45rem] rounded-lg transform transition-all duration-150 hover:scale-110 hover:outline-2 hover:outline-orange-600">
+					
+					<img src="../assets/booking-form.png" class="h-auto rounded-t-lg" alt="room booking system">
+					
+					<div
+					class=" p-2 bg-secondary rounded-b-lg flex flex-col gap-2"
+					>
+					
+						<h2 class="font-medium text-lg">Room booking system</h2>
+						<div class="flex gap-1">
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/html.png" alt="HTML" title="HTML"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/css.png" alt="CSS" title="CSS"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/react.png" alt="React" title="React"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/django.png" alt="Django" title="Django"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/postgresql.png" alt="PostgreSQL" title="PostgreSQL"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/redis.png" alt="redis" title="redis"/>
+							<img class="size-7" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/docker.png" alt="Docker" title="Docker"/>
+						</div>
+						<p class="text-neutral-400">
+							A full-stack room booking system with chat, email notifications, and real-time updates, built using React, Django, and PostgreSQL.
+						</p>
+						
+					</div>
 				</div>
 			</div>
 		</section>
-		<section class="education flex flex-col items-center">
-			<h1 class="font-bold text-4xl mt-32 text-center text-white">EDUCATION</h1>
+		<section id="education" class="scroll-mt-22 mt-32 education flex flex-col items-center">
+			<h1 class="font-bold text-4xl  text-center text-white">EDUCATION</h1>
 			<div
 				class="text-white p-4 mt-10 flex flex-col gap-4 items-center text-center"
 			>
@@ -140,8 +268,8 @@
 				</div>
 			</div>
 		</section>
-		<section
-			class="contact-me flex flex-col items-center gap-10 mt-32 mb-32 text-center text-white"
+		<section id="contact-me"
+			class="scroll-mt-22 flex flex-col items-center gap-10 mt-32 mb-32 text-center text-white"
 		>
 			<h1 class="font-bold text-4xl">CONTACT ME</h1>
 			<div
