@@ -308,8 +308,17 @@
   .h-50 {
     height: calc(var(--spacing) * 50);
   }
+  .h-54 {
+    height: calc(var(--spacing) * 54);
+  }
   .h-60 {
     height: calc(var(--spacing) * 60);
+  }
+  .h-64 {
+    height: calc(var(--spacing) * 64);
+  }
+  .h-72 {
+    height: calc(var(--spacing) * 72);
   }
   .h-80 {
     height: calc(var(--spacing) * 80);
@@ -525,6 +534,9 @@
   }
   .object-contain {
     object-fit: contain;
+  }
+  .object-cover {
+    object-fit: cover;
   }
   .object-fill {
     object-fit: fill;
